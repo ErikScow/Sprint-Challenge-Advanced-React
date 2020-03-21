@@ -15,7 +15,7 @@ class Players extends React.Component {
         axios.get('http://localhost:5000/api/players')
             .then(res => {
                 this.setState({players: res.data})
-                console.log('Players.js: CDM: axios.get.then: ', this.state.players)
+                console.log('Players Data: ', this.state.players)
             })
         
     }
